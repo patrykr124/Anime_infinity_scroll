@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {motion} from "framer-motion";
 
 export interface AnimeProp {
     id: string;
@@ -17,7 +18,9 @@ interface Prop {
     index: number;
 }
 
-function AnimeCard({ anime }: Prop) {
+
+
+function AnimeCard({anime, index}: Prop) {
     return (
         <div className="max-w-sm rounded relative w-full flex flex-col">
             <div className="relative w-full h-[350px] flex justify-center items-center">
